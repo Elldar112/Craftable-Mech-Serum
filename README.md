@@ -1,4 +1,4 @@
-# Craftable-Mech-Serum
+**Craftable Mech Serum HSK** *21-05-2023*
 
 Adds expensive recipes to craft ressurector and healer mech in lategame.
 
