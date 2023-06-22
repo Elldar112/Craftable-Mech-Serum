@@ -59,13 +59,21 @@
 				</filter>
 				<count>20</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentUltra</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
 		</ingredients>
 		<products>
 			<MechSerumResurrector>1</MechSerumResurrector>
 		</products>
 		<skillRequirements>
-			<Medicine>16</Medicine>
-			<Crafting>18</Crafting>
+			<Medicine>14</Medicine>
+			<Crafting>16</Crafting>
 		</skillRequirements>	
 		<recipeUsers>
 			<li>TableBionics</li>
@@ -131,13 +139,21 @@
 				</filter>
 				<count>5</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentUltra</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
 		</ingredients>
 		<products>
 			<MechSerumHealer>1</MechSerumHealer>
 		</products>
 		<skillRequirements>
-			<Medicine>16</Medicine>
-			<Crafting>18</Crafting>
+			<Medicine>14</Medicine>
+			<Crafting>16</Crafting>
 		</skillRequirements>	
 		<recipeUsers>
 			<li>TableBionics</li>
