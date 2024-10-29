@@ -17,7 +17,7 @@
 						<li>Luciferium</li>
 					</thingDefs>
 				</filter>
-				<count>100</count>
+				<count>80</count>
 			</li>
 			<li>
 				<filter>
@@ -97,7 +97,7 @@
 						<li>Luciferium</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
