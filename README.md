@@ -5,7 +5,7 @@ For all those who grow attached to their colonists and don't like losing them fo
 This is still rather lategame, Ultra tech research and requires a lot of luciferium, which is also non-craftble, for balance reasons, and other expensive materials to make, but its more reliable than normal methods of getting serums.
 ```
 Resurrector Mech Serum:
-- 100 Luciferium
+- 80 Luciferium
 - 250 Neutroamine
 - 80 Biomatter
 - 1 MA-AI Chip
@@ -14,7 +14,7 @@ Resurrector Mech Serum:
 - 2 Ultra Components
 
 Healer Mech Serum:
-- 25 Luciferium
+- 20 Luciferium
 - 50 Neutroamine
 - 80 Biomatter
 - 1 MA-AI Chip
