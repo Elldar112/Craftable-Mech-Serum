@@ -11,7 +11,7 @@
   <Operation Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
         <xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum"]/researchPrerequisite</xpath>
         <value>
-			<researchPrerequisite>CR_ResurrectorSerum</researchPrerequisite>
+			<researchPrerequisite>MSRessurectMechSerum</researchPrerequisite>
         </value>
   </Operation>
 
@@ -19,4 +19,18 @@
         <xpath>Defs/ResearchProjectDef[defName="MechSerumProduction"]</xpath>
   </Operation>
 
+  <Operation Class="PatchOperationAdd" MayRequire="Mlie.MedicalSupplements">
+        <xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum" or defName="CR_HealerSerum"]/ingredients</xpath>
+        <value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSInajector_Unit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+        </value>
+  </Operation>
+  
 </Patch>
