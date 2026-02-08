@@ -25,7 +25,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MSInajector_Unit</li>
+						<li>MSInjector_Unit</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -33,4 +33,5 @@
         </value>
   </Operation>
   
+
 </Patch>
