@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+        <xpath>Defs/RecipeDef[defName="CR_HealerSerum"]/researchPrerequisite</xpath>
+        <value>
+			<researchPrerequisite>MSHealerMechSerum</researchPrerequisite>
+        </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+        <xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum"]/researchPrerequisite</xpath>
+        <value>
+			<researchPrerequisite>CR_ResurrectorSerum</researchPrerequisite>
+        </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove" MayRequire="Mlie.MedicalSupplements">
+        <xpath>Defs/ResearchProjectDef[defName="MechSerumProduction"]</xpath>
+  </Operation>
+
+</Patch>
