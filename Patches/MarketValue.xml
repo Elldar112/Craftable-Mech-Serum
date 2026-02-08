@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MechSerumHealer"]/statBases/MarketValue</xpath>
+        <value>
+			<MarketValue>7500</MarketValue>
+        </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MechSerumResurrector"]/statBases/MarketValue</xpath>
+        <value>
+			<MarketValue>9500</MarketValue>
+        </value>
+  </Operation>
+  
+</Patch>
