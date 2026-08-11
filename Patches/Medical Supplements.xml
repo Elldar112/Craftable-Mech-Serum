@@ -1,37 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-  <Operation Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
-        <xpath>Defs/RecipeDef[defName="CR_HealerSerum"]/researchPrerequisite</xpath>
-        <value>
-			<researchPrerequisite>MSHealerMechSerum</researchPrerequisite>
-        </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
-        <xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum"]/researchPrerequisite</xpath>
-        <value>
-			<researchPrerequisite>MSRessurectMechSerum</researchPrerequisite>
-        </value>
-  </Operation>
-
-  <Operation Class="PatchOperationRemove" MayRequire="Mlie.MedicalSupplements">
-        <xpath>Defs/ResearchProjectDef[defName="MechSerumProduction"]</xpath>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd" MayRequire="Mlie.MedicalSupplements">
-        <xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum" or defName="CR_HealerSerum"]/ingredients</xpath>
-        <value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>MSInjector_Unit</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+      <li>Medical Supplements (Continued)</li>
+    </mods>
+	  
+	<match Class="PatchOperationSequence">
+      <success>Always</success>
+		<operations>
+		
+			<li Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+				<xpath>Defs/RecipeDef[defName="CR_HealerSerum"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>MSHealerMechSerum</researchPrerequisite>
+				</value>
 			</li>
-        </value>
-  </Operation>
-  
+		  
+			<li Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+				<xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>MSRessurectMechSerum</researchPrerequisite>
+				</value>
+			</li>
 
+			<li Class="PatchOperationRemove" MayRequire="Mlie.MedicalSupplements">
+				<xpath>Defs/ResearchProjectDef[defName="MechSerumProduction"]</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Mlie.MedicalSupplements">
+				<xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum" or defName="CR_HealerSerum"]/ingredients</xpath>
+				<value>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>MSInjector_Unit</li>
+							</thingDefs>
+						</filter>
+						<count>1</count>
+					</li>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+	</Operation>
 </Patch>
