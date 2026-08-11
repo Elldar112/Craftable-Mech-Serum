@@ -9,25 +9,25 @@
       <success>Always</success>
 		<operations>
 		
-			<li Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="CR_HealerSerum"]/researchPrerequisite</xpath>
 				<value>
 					<researchPrerequisite>MSHealerMechSerum</researchPrerequisite>
 				</value>
 			</li>
 		  
-			<li Class="PatchOperationReplace" MayRequire="Mlie.MedicalSupplements">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum"]/researchPrerequisite</xpath>
 				<value>
 					<researchPrerequisite>MSRessurectMechSerum</researchPrerequisite>
 				</value>
 			</li>
 
-			<li Class="PatchOperationRemove" MayRequire="Mlie.MedicalSupplements">
+			<li Class="PatchOperationRemove">
 				<xpath>Defs/ResearchProjectDef[defName="MechSerumProduction"]</xpath>
 			</li>
 
-			<li Class="PatchOperationAdd" MayRequire="Mlie.MedicalSupplements">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="CR_ResurrectorSerum" or defName="CR_HealerSerum"]/ingredients</xpath>
 				<value>
 					<li>
