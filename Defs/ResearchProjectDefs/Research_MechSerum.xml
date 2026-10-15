@@ -4,7 +4,7 @@
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>MechSerumProduction</defName>
 		<label>Mech Serum Production</label>
-		<description>After long study on mech serums, You are able to recreate them. You will need extremely talented crafter to make them, and they are very expensive to create, but It's a price worth paying for cheating death itelf. </description>
+		<description>After long study on mech serums, You are able to recreate them. You will need extremely talented crafter to make them, and they are very expensive to create, but It's a price worth paying for cheating death itelf.</description>
 		<baseCost>5000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
